@@ -6,7 +6,7 @@ class Character {
   _life = 1;
   maxLife = 1;
   attack = 0;
-  defence = 0;
+  defense = 0;
 
   constructor(name) {
     this.name = name;
@@ -26,7 +26,7 @@ class Knight extends Character {
     super(name);
     this.life = 100;
     this.attack = 10;
-    this.defence = 8;
+    this.defense = 8;
     this.maxLife = this.life;
   }
 }
@@ -36,7 +36,7 @@ class Sorcerer extends Character {
     super(name);
     this.life = 80;
     this.attack = 15;
-    this.defence = 4;
+    this.defense = 4;
     this.maxLife = this.life;
   }
 }
@@ -46,7 +46,7 @@ class Goblin extends Character {
     super('Goblin');
     this.life = 40;
     this.attack = 4;
-    this.def = 4;
+    this.defense = 4;
     this.maxLife = this.life;
   }
 }
@@ -56,7 +56,7 @@ class Beholder extends Character {
     super('Beholder');
     this.life = 60;
     this.attack = 16;
-    this.defence = 6;
+    this.defense = 6;
     this.maxLife = this.life;
   }
 }
@@ -94,17 +94,17 @@ class Stage {
 
   doAttack(attacking, attacked) {
     if (attacking.life <= 0 || attacked.life <= 0) {
-      this.log.addMessage('atacando cachorro morto.')
+      this.log.addMessage('ja está morto.')
       return;
     }
 
     let attackFactor = (Math.random() * 2).toFixed(2);
-    let defenceFactor = (Math.random() * 2).toFixed(2);
+    let defenseFactor = (Math.random() * 2).toFixed(2);
 
     let actualAttack = attacking.attack * attackFactor;
-    let actualDefence = attacked.defence * defenceFactor;
+    let actualDefense = attacked.defense * defenseFactor;
 
-    if (actualAttack > actualDefence) {
+    if (actualAttack > actualDefense) {
       attacked.life -= actualAttack;
       this.log.addMessage(`${attacking.name} causou ${actualAttack.toFixed(2)} de dano em ${attacked.name}`)
     } else {

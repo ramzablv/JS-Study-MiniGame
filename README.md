@@ -1,6 +1,6 @@
 # Minigame de JavaScript
 
-Este repositório contém um minigame desenvolvido em JavaScript como parte dos meus estudos na linguagem. O minigame é um combate simples entre um personagem e um monstro, onde cada um pode atacar o outro até que a barra de vida de um deles chegue a zero.
+Este repositório contém um minigame desenvolvido em JavaScript utilizando Orientação a objeto como parte dos meus estudos na linguagem. O minigame é um combate simples entre um personagem e um monstro, onde cada um pode atacar o outro até que a barra de vida de um deles chegue a zero.
 
 ## Estrutura do Projeto
 
@@ -17,7 +17,7 @@ Este repositório contém um minigame desenvolvido em JavaScript como parte dos 
 
 ## Objetivo
 
-O objetivo deste projeto é aprimorar minhas habilidades em JavaScript através da criação de um minigame interativo. Este projeto abrange conceitos como manipulação do DOM, eventos, e lógica de jogo.
+O objetivo deste projeto é aprimorar minhas habilidades em JavaScript através da criação de um minigame interativo. Este projeto abrange conceitos como manipulação do DOM, Orientação a objeto, eventos, e lógica de jogo.
 
 ## Créditos
 
