@@ -115,7 +115,7 @@ class Stage {
   }
 }
 
-class Log {
+class Screen {
   list = [];
 
   constructor(listEl) {
